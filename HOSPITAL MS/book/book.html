@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="book.css">
+    <title>Document</title>
+</head>
+<body  id="myForm">
+      <div class="wrapper">
+        <div class="inner" >
+            <div class="image">
+                <img src="img\hospital.jpg" alt="">
+            </div>
+            <form action="">
+                <h1>-: Appoitment Form :-</h1>
+                <div class="form-group">
+                    <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter Patient First Name">
+                    <input type="text" name="lname" id="lname" class="form-control"  placeholder="Enter Patient Last Name">
+                </div>
+                <div class="form-wrapper">
+                    <input type="email" name="email" id="email" class="form-control"  placeholder="Enter Patient Email">
+                </div>
+                
+                <div class="form-wrapper">
+                    <input type="tel" name="mobile" id="mobile" class="form-control"  placeholder="Enter Patient Mobile Number">
+                </div>
+
+                <div class="form-wrapper">
+                    <input type="text" name="treat" id="treat" class="form-control"  placeholder="Enter Patient Treatment Name">
+                </div>
+
+                <div class="form-wrapper">
+                    <input type="number" name="age" id="age" class="form-control"  placeholder="Enter Patient Age">
+                </div>
+
+                <div class="form-wrapper">
+                    <input type="date" name="date" id="date" class="form-control"  placeholder="Enter Patient Apooitemnt Date">
+                </div>
+
+                <div class="form-wrapper">
+                    <input type="time" name="time" id="time" class="form-control"  placeholder="Enter Patient Appoitemnt Time">
+                </div>
+
+                
+                <div class="form-wrapper">
+                    <select id="blood"class="form-control"  >
+                        <option>Select Blood Group</option>
+                        <option>A</option>
+                        <option>A+</option>
+                        <option>B</option>
+                        <option>B+</option>
+                        <option>O</option>
+                        <option>O+</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                    </select>
+                </div>
+
+                
+                <div class="form-wrapper">
+                    <select id="gender" class="form-control">
+                        <option>Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <!-- <button class="bt">Book Appoitment</button> -->
+                <!-- <button class="btn" id="back">Back</button> -->
+                <input type="submit" class="bt" onclick="save()" value="Book" id="myForm">
+                <input type="button" class="btn" id="btn" value="Back">
+            </form>
+        </div>
+      </div>
+      <script src="book.js"></script>
+</body>
+</html>
+

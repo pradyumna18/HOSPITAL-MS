@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="doctor.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="main">
+            <li class="active"><a href=""><i class="fa fa-tachometer" aria-hidden="true"></i><span style="position: relative; right:5px">Dashboard</span></a></li>
+            <li><a href=""><i class="fa fa-user-md" aria-hidden="true"></i><span >Profile</span></a></li>
+            <li><a href=""><i class="fa fa-line-chart" aria-hidden="true"></i><span style="position: relative; right:7px">Appoitments</span></a></li>
+            <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i><span style="position: relative; right:5px">Students</span></a></li>
+            <li><a href=""><i class="fa fa-user-md" aria-hidden="true"></i><span>operations</span></a></li>
+            <li><a href=""><i class="fa fa-sliders" aria-hidden="true"></i><span>Settings</span></a></li>
+            <li class="logout"><a href="#" onclick="logout()"><i class="fa fa-sign-out" aria-hidden="true"></i><span>LogOut</span></a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <span>Doctor</span>
+                <h2>DashBoard</h2>
+                
+            </div>
+            <div class="user-info">
+                <div class="serachbox">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" placeholder="Search">
+                </div>
+                <img src="img\profile.avif" alt="">
+            </div>
+        </div>
+    <div class="tabular-wrapper">
+        <h3 class="main-title" style="color:#F99B7D;">Appoitment Data</h3><br>
+        <div class="table-container">
+            <table id="myForm" class="table">
+                <thead>
+                    <tr class="tr">
+                        <th class="th">First Name</th>
+                        <th class="th">Last Name</th>
+                        <th class="th">Email</th>
+                        <th class="th">Mobile</th>
+                        <th class="th">Patient Age</th>
+                        <th class="th">Treatment</th>
+                        <th class="th">Date</th>
+                        <th class="th">Time</th>
+                        <th class="th">Gender</th>
+                        <th class="th">Blood</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr">
+                        <td id="firstName" class="td"></td>
+                        <td id="lastName" class="td"></td>
+                        <td id="emailName" class="td"></td>
+                        <td id="mobileName" class="td"></td>
+                        <td id="pageName" class="td"></td>
+                        <td id="treatmentName" class="td"></td>
+                        <td id="dateName" class="td"></td>
+                        <td id="timeName" class="td"></td>
+                        <td id="bloodName" class="td"></td>
+                        <td id="genderName" class="td"></td>
+                    </tr>
+                <tbody>
+            </table>  
+        </div>
+    </div> 
+</div>
+</div>
+<script src="doctor.js"></script>
+</body>
+</html>
